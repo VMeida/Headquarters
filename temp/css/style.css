@@ -1,0 +1,54 @@
+body, html {
+	height: 1920px;
+	background: #232526; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
+  	background: linear-gradient(to bottom, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	
+ 	font-family: "Roboto";
+ 	background-repeat: no-repeat;
+}
+
+ul {
+	list-style: none;
+	margin-top 0;
+	padding: 0;
+}
+
+li {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;	
+}
+
+li>a{
+	color: white;
+	height: 40px;
+}
+
+span {
+	display: inline-block;
+	transition: 0.2s linear;
+ 	opacity: 0;
+}
+
+.block {
+	background: 232526;
+}
+
+.sidemenu-item {
+	width: 20%;
+
+}
+
+.material-icons {
+	font-size: 1.1em;
+}
+
+.brand-logo {
+	padding: 0;
+}
+

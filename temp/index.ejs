@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
+  <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
+	<title>The Headquarters</title>
+	<!-- bootstrap -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+	<!-- roboto font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+	<!-- ICONS -->
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Materialize -->
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<script type="text/javascript" src="materialize.min.js"></script>
+	<!-- Plugins -->
+	<link href="js/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+		<!-- custom CSS -->
+		<link href='css/style.css' rel="stylesheet">
+</head>
+
+
+<body>
+	<!-- NAVBAR -->
+
+	<header id="header" class="page-topbar">
+		<div class="navbar-fixed">
+      <nav class="grey darken-3">
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#" class="brand-logo center">Headquarters</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Log In</a>
+              </li>
+              <li><a href="#">Sign In</a>
+              </li>
+              <li><a href="#">Dashboard</a>
+              </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+	            <li><a href="#">Log In</a>
+	            </li>
+	            <li><a href="#">Sign In</a>
+	            </li>
+	            <li><a href="#">Dashboard</a>
+	            </li>
+	          </ul>
+          </div>
+        </div>
+      </nav>
+	</header>
+
+	<!-- SIDE NAVBAR -->
+	<aside id="left-sidebar-nav">
+	  <ul id="slide-out" class="side-nav fixed leftside-navigation grey darken-2">  
+	      <li class="bold"><a href="#" class="waves-effect"><i class="fa fa-table"></i> Tables</a>
+	      </li>
+	      <li class="bold"><a href="#" class="waves-effect"><i class="fa fa-bar-chart"></i> Charts</a>
+	      </li>
+	      <li class="bold"><a href="#" class="waves-effect"><i class="material-icons">timeline</i> Processes</a>
+	      </li>
+	      <li class="bold"><a href="#" class="waves-effect"><i class="fa fa-calendar"></i> Calendar</a>
+	      </li>
+	      <li class="bold"><a href="#" class="waves-effect"><i class="fa fa-balance-scale"></i> Finance</a>
+	      </li>
+	  </ul>
+	  <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only cyan"><i class="mdi-navigation-menu material-icons"></i></a>
+  </aside>
+
+		<div class="container">
+          <p class="caption"><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">editableTable</a> turns any table into an editable spreadsheet.</p>
+          <div class="divider"></div>
+          <!--editableTable-->
+          <div id="editableTable" class="section">
+            <div class="row">
+              <div class="col s12 m4 l3">
+                <h4 class="header">editableTable</h4>
+              </div>
+              <div class="col s12 m8 l9">
+                  <p>Just start typing to edit, or move around with arrow keys or mouse clicks!</p>
+                  <table id="mainTable" class="table table-striped">
+            <thead><tr><th>Name</th><th>Cost</th><th>Profit</th><th>Fun</th></tr></thead>
+            <tbody>
+              <tr><td>Car</td><td>100</td><td>200</td><td>0</td></tr>
+              <tr><td>Bike</td><td>330</td><td>240</td><td>1</td></tr>
+              <tr><td>Plane</td><td>430</td><td>540</td><td>3</td></tr>
+              <tr><td>Yacht</td><td>100</td><td>200</td><td>0</td></tr>
+              <tr><td>Segway</td><td>330</td><td>240</td><td>1</td></tr>
+            </tbody>
+			<tfoot><tr><th><strong>TOTAL</strong></th><th></th><th></th><th></th></tr></thead>
+          </table>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="row">
+              <div class="col s12 m4 l3">
+                <p>Usage</p>
+              </div>
+              <div class="col s12 m8 l9">
+<pre class="language-javascript"><code class="language-javascript" data-language="javascript">
+$('#table').editableTableWidget();
+</code></pre>
+
+
+<p>Make sure that the editor clones some specific CSS properties of the underlying cell</p>
+<pre class="language-javascript"><code class="language-javascript" data-language="javascript">
+$('#table').editableTableWidget({
+	cloneProperties: ['background', 'border', 'outline']
+});
+</code></pre>
+
+              </div>
+            </div>
+            
+          </div>
+
+	</div>
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--angularjs-->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<!--materialize js-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<!--prism -->
+<script type="text/javascript" src="js/prism.js"></script>
+<!--scrollbar-->
+<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+<!-- chartist -->
+<script type="text/javascript" src="js/chartist.min.js"></script>   
+
+<!--editabletable-->
+<script type="text/javascript" src="js/mindmup-editabletable.js"></script>   
+<script type="text/javascript" src="js/numeric-input-example.js"></script>
+ <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+    <script type="text/javascript" src="js/plugins.min.js"></script>
+    <!--custom-script.js - Add your own theme custom JS-->
+    <script type="text/javascript" src="js/custom-script.js"></script>
+    <script type="text/javascript">
+        $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+        $('#textAreaEditor').editableTableWidget({editor: $('<textarea>')});
+        window.prettyPrint && prettyPrint();
+    </script>
+
+</body>
+</html>
